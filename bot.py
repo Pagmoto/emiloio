@@ -23,7 +23,7 @@ now it is an obsolete version for my work environment, that's why I post it for 
 	-TOKEN: 5275087288:AAFq0bGPpJaqBNwjd5NTku9uP6gkrzc1tR0
 	- MODE: prod
 	- CHAT_ID_FORWARD: -855828909
-	- HEROKU_APP_NAME: ( no )
+	- HEROKU_APP_NAME: ( pagmaw )
 '''
 
 
@@ -55,7 +55,7 @@ elif mode == "prod":
 		PORT = int(os.environ.get("PORT", "8443"))
 		HEROKU_APP_NAME = os.environ.get("teleot22")
 		updater.start_webhook(listen="0.0.0.0", port=PORT, url_path=tk)
-		updater.bot.set_webhook(f"https://{teleot22}.herokuapp.com/"+ tk)
+		updater.bot.set_webhook(f"https://{pagmaw}.herokuapp.com/"+ tk)
 else:
 	sys.exit()
 
